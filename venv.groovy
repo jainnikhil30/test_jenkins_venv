@@ -28,8 +28,10 @@ pipeline {
                         globalHelpers.helperCreateVenv()
                     }
             }
+        }
+        stage('Pausing') {
             steps {
-                sleep(time: 10, unit: 'MINUTES')
+                sleep(time: 2, unit: 'MINUTES')
             }
         }
     }
